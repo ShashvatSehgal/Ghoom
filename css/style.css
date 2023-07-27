@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* .navbar h1{ */
+    /* border: 2px solid green; */
+    /* padding-left: 25%;
+    width: 30%;
+    padding-top: 30px;
+    font-size: xx-large;
+    color: aliceblue;
+} */
+
+/* .navbar li{ */
+    /* border: 2px solid blue; */
+    /* display: inline;
+    color: aliceblue;
+    margin-left: 4%;
+
+} */
+
+/* .navbar ul{ */
+    /* border: 1px solid black; */
+    /* text-align: right;
+    padding-right: 100px; */
+    /* padding-bottom: 10px; */
+    /* margin-top: -25px;
+} */
+
+/* .navbar a{
+    color: aliceblue;
+} */
+
+/*/################################ harshit doing ----------------------------------------->*/
+
+/* ############### UTILITY CLASSES   ########### */
+
+.container{
+    max-width: 1200px;
+    width: 75%;
+    margin: auto auto;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color:red
+}
+
+.text-light{
+    color:#f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0 ; 
+    /* color: red; */
+}
+
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 100px;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-primary:hover{
+    background-color: red;
+    color: #f4f4f4;
+}
+
+.btn-primary:visited{
+    background-color: #f4f4f4;
+    border-radius: 100px;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-secondary{
+    border: 2px solid red;
+    border-radius: 1.5em;
+    /* color: red; */
+    background: #fff;
+}
+
+.btn-secondary:hover{
+    background-color: red;
+    color: #f4f4f4;
+}
+
+/* .btn-primary a:hover, a:active{
+    color: black;
+} */
+
+
+/* ##############  UTILITY CLASSES ENDS ############ */
+.header .navbar a,
+.header .logo{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right ;
+    margin-top: 1rem;
+}
+
+.navbar{ 
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar .nav-items .nav-item{
+    display: inline-block; 
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+html{
+    /* 16px == 100% ,  1px == 100/16 , 10px == 1000/16 i.e 62.5%  */
+    font-size: 62.5%;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;     /*em adjust according to font size*/
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em; 
+    font-weight: 500;
+}
+
+.navbar a:link, a:visited, a:hover {
+    color: #f4f4f4;
+  }
+
+.navbar a:hover{
+    border-bottom:1px solid #f4f4f4 ;
+}  
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+/* -------------------------  header content styling -- */
+
+.header2 h1{
+    text-transform: uppercase;
+} 
+
+.header2 p{
+    text-transform: uppercase;
+}
+
+.header2{
+    position: absolute; 
+    /* border: 2px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+}
+
+/* ########## SHOWCASE SECTION STYLING ############# */
+
+.show-case{
+    background-color:#ddd;
+    padding: 10rem 0; 
+}
+
+.row{
+    height: 350px;
+    /* border: 5px solid red; */
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    /* border: 6px solid black; */
+    height: 100%;
+}
+
+.row .text-box{
+    /* border: 2px solid blue; */
+    /* height: 100%; */
+    padding: 3rem;
+}
+
+.row1 .img-box img{
+    /* background-image: url('../img/kedarnath.jpg'); */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row2 .img-box{
+    background-image: url('../img/dev.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* -------------- feature section----------------- */
+
+.feature{
+    /* background-color: black; */
+    /* border: 2px solid orange; */
+    padding: 10rem 0;
+}
+
+/* .container .box-wrapper .box .box1,.box3{
+    background-color: black;
+    color: #fff;
+    width: 33.3%;
+}
+
+.container .box-wrapper .box .box2{
+    color: #fff;
+    background-color: red;
+    width: 33.3%;
+} */
+
+.box-wrapper{
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 20px 0px black;
+}
+
+.box{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    /* border: 2px solid red; */
+    height: 20em;
+    padding: 2rem;
+}
+
+.box-1, .box-3{
+    background-color: #263238 ;
+    color: #f4f4f4;
+}
+
+.box-2{
+    background-color: red;
+    color: #f4f4f4;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ++++++++++++ FOOTER STYLING ++++++++++++++ */
+
+.footer{
+    background-color: #333333;
+    padding: 2rem;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.symbols i{
+    margin-right: 1.5em;
+}
+
+.footer p{
+    /* color: #f4f4f4; */
+    padding-top: 1em;
+}
+
+/* ------------  ABOUT HTML ------------------ */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid red;
+    width: 100%;
+}
+
+
+/* ############ about wrapper ################ */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.about-wrapper .left{
+    float: left; 
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about li::before{
+    content: '✓ ';
+    color: red;
+    font-weight: bold;
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* -------------- counts -------------------- */
+
+.counts{
+    /* border: 6px solid black; */
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.count-items{
+    float: left;
+    /* border: 2px solid red; */
+    width: 25%;
+    /* text-align: center; */
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-items span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+}
+
+.count-items p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+/* ----------------- banner --------------------- */
+
+ .cta-banner{
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%) ;
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #000057;
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+} 
+
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem ;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    letter-spacing: 0.5rem;
+    padding: 0.3em 2.5em;
+    color: #f4f4f4;
+}
+
+/* **************  contact page styling ************** */
+
+.contact-form{
+    padding-top: 5rem;
+    background: #f7f7f7;
+}
+
+
+.form-wrapper .company-addres{
+    background: #fff;
+    float: left;
+    /* border: 1px solid black; */
+    width: 49%;
+    padding: 1rem;
+    height: 760px;
+}
+
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 40rem;
+}
+
+.form-wrapper .company-addres h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin: 3rem;
+}
+
+.form-wrapper .company-addres img{
+    max-width: 90%;
+    min-height: 40rem ;
+    object-fit: cover;
+}
+
+/* --------- form-styling ----------*/
+
+.form-wrapper .form{
+    height: 760px;
+    background: #fff;
+    float: right;
+    /* border: 1px solid blue; */
+    width: 49%;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content:"" ;
+    display: block;
+    border: 3px solid red;
+    width: 100%;
+
+}
+
+.form-wrapper .form label{
+    display: block;
+    padding: 0.5rem;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form-group label::after{
+    content: '*';
+    color: red;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    background:red;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    padding: 0.5em 3em ;
+}
